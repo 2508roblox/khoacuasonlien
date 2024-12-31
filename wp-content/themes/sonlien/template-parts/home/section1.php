@@ -8,10 +8,10 @@
 			<?php if($bannerContents): $i = 0; ?> 
 				<?php foreach ($bannerContents as $key => $bannerContent): $i++; ?>
 					<div class="swiper-slide">
-						<div class="_left">
+						<div class="_left" style="padding-bottom: 27rem;    font-family: Arial, sans-serif !important;">
 							<div class="--content" data-aos="fade-right">
-								<h2><?php echo $bannerContent['title']; ?></h2>
-								<p><?php echo $bannerContent['sku']; ?></p>
+								<h2 style="    font-family: Arial, sans-serif !important; font-weight: bold;"><?php echo $bannerContent['title']; ?></h2>
+								<p style="    font-family: Arial, sans-serif !important; font-weight: bold;"><?php echo $bannerContent['sku']; ?></p>
 							</div>
 						</div>
 						<div class="_right" data-aos="fade-left">

@@ -20,6 +20,8 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', 'C:\xampp\htdocs\wordpress\wp-content\plugins\wp-super-cache/' );
 define( 'DB_NAME', 'tu_misubishi' );
 
 /** Database username */
@@ -89,6 +91,8 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+define('DISABLE_CACHE', true);
+ // Added by WP Rocket
 
 
 /* That's all, stop editing! Happy publishing. */

@@ -23455,5 +23455,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.h-section1 .swiper-container .swiper-slide ._left{
+  padding-bottom: 27rem !important;
+}
 /*# sourceMappingURL=style.css.map */
