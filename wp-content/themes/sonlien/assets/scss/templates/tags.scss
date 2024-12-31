@@ -1,0 +1,230 @@
+.post_tags{
+    .tw_container{
+        .content_all{
+            padding: 30px percentage(120/1440) 40px;
+            @media(max-width: 1024px){
+                padding: 30px 30px 40px;
+            }
+            @media(max-width: 480px){
+                padding: 30px 23px 40px;
+            }
+            ._breadcrumbs{
+                font-size: .9375rem;
+                line-height: 1.4375rem;
+                margin-bottom: 16px;
+                a{
+                    color: #333333;
+                }
+                i{
+                    margin: 0 6px;
+                }
+            }
+            ._message{
+                font-family: "Gilroy-Extrabold";
+                font-size: 1.875rem;
+                line-height: 2.75rem;
+                text-transform: uppercase;
+                color: #1C1D20;
+                margin-bottom: 40px;
+                @media(max-width: 480px){
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+            ._content_site{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                @media(max-width: 768px){
+                    flex-direction: column;
+                }
+                .__left{
+                    width: percentage(760/1200);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    @media(max-width: 1024px){
+                        width: percentage(810/1200);
+                    }
+                    @media(max-width: 768px){
+                        width: 100%;
+                    }
+                    a{
+                        display: block;
+                        width: calc((100% - 40px)/2);
+                        margin-bottom: 42px;
+                        @media(max-width: 1024px){
+                            width: calc((100% - 30px)/2);
+                        }
+                        @media(max-width: 480px){
+                            width: 100%;
+                            margin-bottom: 30px;
+                        }
+                        &:hover{
+                            @media(min-width: 1200px){
+                                .-image{
+                                    div{
+                                        transform: scale(1.05);
+                                    }
+                                }
+                            }
+                        }
+                        .-image{
+                            width: 100%;
+                            overflow: hidden;
+                            height: 240px;
+                            margin-bottom: 25px;
+                            @media(max-width: 480px){
+                                height: auto;
+                            }
+                            div{
+                                width: 100%;
+                                height: 100%;
+                                background-position: center;
+                                background-size: cover;
+                                transition: .3s;
+                                img{
+                                    display: none;
+                                    @media(max-width: 480px){
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                        .-text{
+                            time{
+                                font-family: "iCielGotham-Medium";
+                                font-size: 1.0625rem;
+                                line-height: 1.25rem;
+                                color: #828282;
+                                span{
+                                    margin-left: 10px;
+                                }
+                                img{
+                                    width: 16px;
+                                }
+                            }
+                            h3{
+                                font-family: "iCielGotham-Bold";
+                                font-size: 1.125rem;
+                                line-height: 1.75rem;
+                                letter-spacing: -0.03em;
+                                color: #1C1D20;
+                                margin-bottom: 18px;
+                                margin-top: 14px;
+                            }
+                            p{
+                                font-family: "iCielGotham-Medium";
+                                font-size: .875rem;
+                                line-height: 1.0625rem;
+                                color: #D71920;
+                                display: inline-block;
+                                position: relative;
+                                &::before{
+                                    position: absolute;
+                                    content:"";
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: #D71920;
+                                    bottom: 0;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .__right{
+                    width: percentage(360/1200);
+                    @media(max-width: 768px){
+                        width: 100%;
+                    }
+                    .-item{
+                        margin-bottom: 40px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        .--title{
+                            padding: 18px 30px 14px;
+                            font-family: "Gilroy-Extrabold";
+                            font-size: 1.375rem;
+                            line-height: 1.6875rem;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            background: #D71920 url('./assets/images/news/decor.png');
+                            background-position: center;
+                            background-size: cover;
+                        }
+                        .--border-box{
+                            padding: 0 30px 30px;
+                            border: 1px solid #BDBDBD;
+                            box-sizing: border-box;
+                            border-top: 0;
+                            .--list-related{
+                                p{
+                                    padding: 24px 0 20px;
+                                    border-bottom: 1px solid #E0E0E0;
+                                    font-family: "iCielGotham-Medium";
+                                    font-size: .9375rem;
+                                    line-height: 1.5rem;
+                                    color: #1C1D20;
+                                    &:last-child{
+                                        border-bottom: 1px solid transparent;
+                                    }
+                                    a{
+                                        color: #1C1D20;
+                                    }
+                                }
+                            }
+
+                            .--list-tags{
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding-top: 30px;
+                                a{
+                                    display: flex;
+                                    height: 35px;
+                                    padding: 0 8px;
+                                    margin-right: 15px;
+                                    margin-bottom: 15px;
+                                    border: 1px solid #F0F0F0;
+                                    box-sizing: border-box;
+                                    font-family: "iCielGotham-Medium";
+                                    font-size: 1.0625rem;
+                                    line-height: 35px;
+                                    color: #1C1D20;
+                                }
+                            }
+                            .--see-more{
+                                font-family: "iCielGotham-Medium";
+                                font-size: .875rem;
+                                line-height: 1.0625rem;
+                                color: #D71920;
+                                display: inline-block;
+                                position: relative;
+                                margin-top: 10px;
+                                transition: .3s;
+                                &:hover{
+                                    @media(min-width: 1200px){
+                                        letter-spacing: .05rem;
+                                    }
+                                }
+                                &::before{
+                                    position: absolute;
+                                    content:"";
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: #D71920;
+                                    bottom: 0;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

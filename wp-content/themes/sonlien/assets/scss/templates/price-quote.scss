@@ -1,0 +1,263 @@
+.coating_quote{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333333;
+    opacity: 0.3;
+    z-index: 2002;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+    &.is--active{
+        opacity: .3;
+        visibility: visible;
+    }
+}
+.block_quote{
+    position: fixed;
+    z-index: 2003;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    &.is--active{
+        ._quote{
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+    }
+    ._quote{
+        width: 600px;
+        background-color: #ffffff;
+        pointer-events: visible;
+        padding: 50px 80px;
+        position: relative;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+        transition: .4s;
+        &.is--active{
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+        @media(max-width: 1024px){
+            width: 720px;
+        }
+        @media(max-width: 480px){
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding: 30px 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .--close-quote{
+            position: absolute;
+            top: 26px;
+            right: 26px;
+            width: 20px;
+            height: 20px;
+            @media(max-width: 480px){
+                width: 15px;
+                height: 15px;
+                top: 20px;
+                right: 20px;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .__title_social{
+            font-family: "iCielGotham-Bold";
+            font-size: 1rem;
+            line-height: 1.1875em;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: center;
+            @media(max-width: 480px){
+                margin-bottom: 15px;
+            }
+        }
+        .__quote_social{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 30px;
+            @media(max-width: 1024px){
+                justify-content: space-between;
+            }
+            @media(max-width: 480px){
+                margin-bottom: 20px;
+            }
+            a{
+                display: block;
+                width: 229px;
+                @media(max-width: 1024px){
+                    width: calc((100% - 25px)/2);
+                }
+                @media(max-width: 480px){
+                    width: calc((100% - 15px)/2);
+                }
+                &:first-child{
+                    margin-right: 25px;
+                    @media(max-width: 1024px){
+                        margin-right: 0;
+                    }
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .__title_quote{
+            font-family: "iCielGotham-Bold";
+            font-size: 1.5rem;
+            line-height: 1.625rem;
+            text-transform: uppercase;
+            color: #000000;
+            text-align: center;
+            margin-bottom: 30px;
+            @media(max-width: 480px){
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+                line-height: 1.45rem;
+            }
+        }
+
+    
+    }
+    .frm_quote{
+        margin-bottom: 15px;
+        @media(max-width: 480px){
+            margin-bottom: 15px;
+        }
+        .message_err_quote{
+            margin-top: 20px;
+            color: #D71920;
+            font-family: "iCielGotham-Medium";
+        }
+        .field_all{
+            text-align: left;
+            .--frm_group{
+                margin-bottom: 25px;
+                position: relative;
+                .message_field{
+                    position: absolute;
+                    font-style: italic;
+                    bottom: -23px;
+                    left: 0;
+                    font-size: .8125rem;
+                    line-height: 1.1625rem;
+                    color: #828282;
+                    @media(max-width: 480px){
+                        font-size: 0.75rem;
+                        line-height: 1rem;
+                        bottom: -19px;
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                label{
+                    font-family: "iCielGotham-Medium";
+                    font-size: 0.875rem;
+                    line-height: 1.625rem;
+                    text-transform: uppercase;
+                    color: #1C1D20;
+                    display: block;
+                    span{
+                        color: #D71920;
+                    }
+                }
+                input,select{
+                    width: 100%;
+                    height: 50px;
+                    padding: 0 20px;
+                    font-size: 1.0625rem;
+                    line-height: 1.25rem;
+                    color: #333333;
+                    border: 1px solid #BDBDBD;
+                    box-sizing: border-box;
+                    outline: none;
+                    @media(max-width: 480px){
+                        height: 40px;
+                        padding: 0 12px;
+                    }
+                    &:focus{
+                        border: 1px solid #D01521;
+                    }
+                }
+            }
+        }
+
+        .frm_control{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            @media(max-width: 320px){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            a{
+                font-family: "iCielGotham-Medium";
+                font-size: 0.9375rem;
+                line-height: 1.125rem;
+                text-decoration: underline;
+                color: #2F80ED;
+                @media(max-width: 480px){
+                    margin-bottom: 15px;
+                }
+            }
+
+            button{
+                width: 100%;
+                height: 50px;
+                background-color: #D71920;
+                border: none;
+                font-family: "iCielGotham-Medium";
+                font-size: 0.9375rem;
+                line-height: 1.125rem;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                cursor: pointer;
+                @media(max-width: 480px){
+                    width: 100%;
+                    height: 43px;
+                }
+            }
+        }
+      
+    }
+    .--quote-social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        a{
+            width: calc((100% - 25px)/2);
+            @media(max-width: 480px){
+                width: calc((100% - 15px)/2);
+            }
+            &:nth-of-type(1){
+                margin-right: 25px;
+                @media(max-width: 480px){
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

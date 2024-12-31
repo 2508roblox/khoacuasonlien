@@ -1,0 +1,857 @@
+.checkout{
+    ._step_checkout{
+        background: #D71920 url('./assets/images/checkout/bg.png');
+        .tw_container{
+            ._steps{
+                padding: 4px percentage(97/1440);
+                position: relative;
+                @media(max-width: 1024px){
+                    padding: 4px 30px;
+                }
+                @media(max-width: 768px){
+                    padding: 4px 50px;
+                }
+                .swiper-container{
+                    .swiper-slide{
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        &.is--active{
+                            background-color: #ffffff;
+                            a{
+                                font-family: "iCielGotham-Bold";
+                                color: #D71920;
+                            }
+                        }
+                        a{
+                            font-size: 1rem;
+                            line-height: 1.625rem;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            opacity: 0.9;
+                        }
+                    }
+                }
+
+                .--panigate{
+                    width: auto;
+                    height: auto;
+                    background-image: none;
+                    outline: none;
+                    display: none;
+                    @media(max-width: 1024px){
+                        display: block;
+                        margin-top: -10px;
+                    }
+                    &.swiper-button-next{
+                        @media(max-width: 1024px){
+                            right: 15px;
+                        }
+                    }
+                    &.swiper-button-prev{
+                        @media(max-width: 1024px){
+                            left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ._content_site{
+        .tw_container{
+            .content_all{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 76px percentage(120/1440) 117px;
+                @media(max-width: 1024px){
+                    padding: 76px 30px 117px;
+                }
+                @media(max-width: 480px){
+                    padding: 50px 23px 80px;
+                    flex-direction: column;
+                }
+                &.login_signin{
+                    .__left{
+                        width: 485px;
+                        @media(max-width: 1024px){
+                            width: calc((100% - 50px)/2);
+                        }
+                        @media(max-width: 768px){
+                            width: 53%;
+                        }
+                        @media(max-width: 480px){
+                            width: 100%;
+                            margin-bottom: 30px;
+                        }
+                        .--directional{
+                            color: #000000;
+                            margin-bottom: 29px;
+                        }
+                        .frm_login{
+                            margin-bottom: 38px;
+                            @media(max-width: 480px){
+                                margin-bottom: 30px;
+                            }
+                            .message_err_login{
+                                margin-top: 20px;
+                                color: #D71920;
+                                font-family: "iCielGotham-Medium";
+                            }
+                            .field_all{
+                                .--frm_group{
+                                    margin-bottom: 25px;
+                                    position: relative;
+                                    .message_field{
+                                        position: absolute;
+                                        font-style: italic;
+                                        bottom: -23px;
+                                        left: 0;
+                                        font-size: .8125rem;
+                                        line-height: 1.1625rem;
+                                        color: #828282;
+                                        @media(max-width: 480px){
+                                            font-size: 0.75rem;
+                                            line-height: 1rem;
+                                            bottom: -19px;
+                                        }
+                                    }
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+                                    label{
+                                        font-family: "iCielGotham-Medium";
+                                        font-size: 0.875rem;
+                                        line-height: 1.625rem;
+                                        text-transform: uppercase;
+                                        color: #1C1D20;
+                                        display: block;
+                                        span{
+                                            color: #D71920;
+                                        }
+                                    }
+                                    input{
+                                        width: 100%;
+                                        height: 50px;
+                                        padding: 0 20px;
+                                        font-size: 1.0625rem;
+                                        line-height: 1.25rem;
+                                        color: #333333;
+                                        border: 1px solid #BDBDBD;
+                                        box-sizing: border-box;
+                                        outline: none;
+                                        @media(max-width: 480px){
+                                            height: 40px;
+                                            padding: 0 12px;
+                                        }
+                                        &:focus{
+                                            border: 1px solid #D01521;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .frm_control{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-top: 30px;
+                                @media(max-width: 320px){
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                }
+                                a{
+                                    font-family: "iCielGotham-Medium";
+                                    font-size: 0.9375rem;
+                                    line-height: 1.125rem;
+                                    text-decoration: underline;
+                                    color: #2F80ED;
+                                    @media(max-width: 480px){
+                                        margin-bottom: 15px;
+                                    }
+                                }
+
+                                button{
+                                    width: 160px;
+                                    height: 46px;
+                                    background-color: #D71920;
+                                    border: none;
+                                    font-family: "iCielGotham-Medium";
+                                    font-size: .9375rem;
+                                    line-height: 1.125rem;
+                                    text-transform: uppercase;
+                                    color: #FFFFFF;
+                                    @media(max-width: 480px){
+                                        width: 145px;
+                                        height: 43px;
+                                    }
+                                }
+                            }
+                        }
+                        .--or{
+                            font-family: "iCielGotham-Bold";
+                            font-size: 1rem;
+                            line-height: 1.1875;
+                            text-transform: uppercase;
+                            color: #000000;
+                            margin-bottom: 20px;
+                        }
+
+                        .--login-social{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            a{
+                                width: calc((100% - 25px)/2);
+                                @media(max-width: 480px){
+                                    width: calc((100% - 15px)/2);
+                                }
+                                &:nth-of-type(1){
+                                    margin-right: 25px;
+                                    @media(max-width: 480px){
+                                        margin-right: 15px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .--not-login{
+                            width: 100%;
+                            display: block;
+                            background: #E0E0E0;
+                            font-family: "iCielGotham-Medium";
+                            font-size: 0.9375rem;
+                            line-height: 1.125rem;
+                            letter-spacing: 0.03em;
+                            text-transform: uppercase;
+                            color: #000000;
+                            text-align: center;
+                            padding: 15px;
+                            @media(max-width: 480px){
+                                font-size: .8125rem;
+                            }
+                            @media(max-width: 320px){
+                                padding: 15px 50px;
+                                line-height: 1.35rem;
+                            }
+                        }
+                    }
+                    .__right{
+                        width: 480px;
+                        color: #000000;
+                        @media(max-width: 1024px){
+                            width: calc((100% - 50px)/2);
+                        }
+                        @media(max-width: 768px){
+                            width: 43%;
+                        }
+                        @media(max-width: 480px){
+                            width: 100%;
+                        }
+                        .__question{
+                            font-family: "iCielGotham-Bold";
+                            font-size: 1.25rem;
+                            line-height: 1.5rem;
+                            text-transform: uppercase;
+                            margin-bottom: 30px;
+                        }
+                        ul{
+                            margin: 19px 0 36px;
+                            li{
+                                font-size: 0.9375rem;
+                                line-height: 1.625rem;
+                                margin-bottom: 12px;
+                                padding-left: 36px;
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    width: 22px;
+                                    height: 22px;
+                                    background-image: url('./assets/images/login-signin/ok.png');
+                                    background-size: 100% 100%;
+                                    left: 0;
+                                    top: 2px;
+                                    position: absolute;
+                                }
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+
+                        .btn_signin{
+                            width: 160px;
+                            height: 46px;
+                            background-color: #D71920;
+                            border: none;
+                            font-family: "iCielGotham-Medium";
+                            font-size: .9375rem;
+                            line-height: 1.125rem;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            cursor: pointer;
+                            outline: none;
+                        }
+                    }
+                }
+
+                &.checkout-page{
+                    padding: 64px percentage(120/1440) 100px;
+                    @media(max-width: 1024px){
+                        padding:  64px 30px 100px;
+                    }
+                    @media(max-width: 768px){
+                        flex-direction: column;
+                    }
+                    @media(max-width: 480px){
+                        padding: 40px 23px 60px
+                    }
+                    .__left{
+                        width: percentage(560/1200);
+                        @media(max-width: 1024px){
+                            width: percentage(650/1200);
+                        }
+                        @media(max-width: 768px){
+                            width: 100%;
+                            order: 2;
+                        }
+                        .woocommerce{
+                            .woocommerce-notices-wrapper{
+                                .woocommerce-message{
+                                    display: none;
+                                }
+                            }
+                            .step_checkout_02{
+                                display: none !important;
+                                &.is--active{
+                                    display: block !important;
+                                }
+                            }
+                            .woocommerce-checkout{
+                                .col2-set{
+                                    flex-direction: column;
+                                    margin-bottom: 40px;
+                                    &.step_checkout_01{
+                                        display: none;
+                                        &.is--active{
+                                            display: flex;
+                                        }
+                                    }
+                                    .form-row-wide{
+                                        margin-bottom: 40px;
+                                        padding: 0;
+                                        width: 100%;
+                                        @media(max-width: 480px){
+                                            margin-bottom: 25px;
+                                        }
+                                        &#billing_address_2_field{
+                                            width: 60%;
+                                            @media(max-width: 480px){
+                                                width: 100%;
+                                            }
+                                        }
+                                        &#billing_postcode_field{
+                                            width: 37%;
+                                            @media(max-width: 480px){
+                                                width: 100%;
+                                            }
+                                        }
+                                        &:last-child{
+                                            margin-bottom: 0;
+                                        }
+                                        label{
+                                            font-family: "iCielGotham-Medium";
+                                            font-size: 14px;
+                                            line-height: 26px;
+                                            text-transform: uppercase;  
+                                            color: #1C1D20;
+                                            @media(max-width: 480px){
+                                                font-size: 13px;
+                                                line-height: 23px;
+                                            }
+                                        }
+                                        input{
+                                            background: #FFFFFF;
+                                            border: 1px solid #BDBDBD;
+                                            box-sizing: border-box;
+                                            height: 50px;
+                                            font-size: 17px;
+                                            line-height: 20px;
+                                            color: #333333;
+                                            padding: 0 20px;
+                                            outline: none;
+                                            @media(max-width: 480px){
+                                                padding: 0 12px;
+                                                height: 44px;
+                                                font-size: 15px;
+                                            }
+                                        }
+                                        select{
+                                            outline: none;
+                                        }
+                                        .selection{
+                                            .select2-selection--single{
+                                                background-color: #fff;
+                                                border: 1px solid #BDBDBD;
+                                                border-radius: 0;
+                                                height: 50px;
+                                                display: flex;
+                                                align-items: center;
+                                                @media(max-width: 480px){
+                                                    height: 44px;
+                                                }
+                                                .select2-selection__rendered{
+                                                    padding: 0 20px;
+                                                    font-size: 17px;
+                                                    line-height: 26px;
+                                                    color: #1C1D20;
+                                                    @media(max-width: 480px){
+                                                        padding: 0 20px 0 12px;
+                                                        font-size: 15px;
+                                                    }
+                                                    .select2-selection__placeholder{
+                                                        color: #1C1D20;
+                                                        font-size: 17px;
+                                                        line-height: 26px;
+                                                        @media(max-width: 480px){
+                                                            font-size: 15px;
+                                                        }
+                                                    }
+                                                }
+                                                .select2-selection__arrow{
+                                                    height: 50px;
+                                                    right: 20px;
+                                                    @media(max-width: 480px){
+                                                        height: 44px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .optional{
+                                            display: none;
+                                        }
+                                    }
+                                    .col-1{
+                                        width: 100%;
+                                        margin-bottom: 35px;
+                                        h3{
+                                            font-family: "iCielGotham-Bold";
+                                            font-size: 18px;
+                                            line-height: 22px;
+                                            text-transform: uppercase;
+                                            color: #1C1D20;
+                                            margin-bottom: 36px;
+                                        }
+                                        .woocommerce-billing-fields{
+                                            .woocommerce-billing-fields__field-wrapper{
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                justify-content: space-between;
+                                            }
+                                        }
+                                    }
+                                    .col-2{
+                                        width: 100%;
+                                        .woocommerce-shipping-fields{
+                                            .woocommerce-shipping-fields__field-wrapper{
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                justify-content: space-between;
+                                                .form-row-wide{
+                                                    width: 100%;
+                                                    &#shipping_address_2_field{
+                                                        width: 60%;
+                                                        @media(max-width: 480px){
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    &#shipping_postcode_field{
+                                                        width: 37%;
+                                                        @media(max-width: 480px){
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            h3#ship-to-different-address{
+                                                margin-bottom: 20px;
+                                                display:none;
+                                                label{
+                                                    input{
+                                                        display: none;
+                                                        &:checked + span{
+                                                            &::before{
+                                                                background-color: #D71920;
+                                                            }
+                                                        }
+                                                    }
+                                                    span{
+                                                        font-family: "iCielGotham-Medium";
+                                                        font-size: 16px;
+                                                        line-height: 19px;
+                                                        text-transform: uppercase;
+                                                        color: #000000;
+                                                        position: relative;
+                                                        padding-left: 26px;
+                                                        &::before{
+                                                            content: "";
+                                                            width: 12px;
+                                                            height: 12px;
+                                                            border: 3px solid #E0E0E0;
+                                                            background-color: #E0E0E0;
+                                                            left: 0;
+                                                            top: 2px;
+                                                            position: absolute;
+                                                            border-radius: 50%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .woocommerce-checkout-review-order{
+                                    .title_shipping_method{
+                                        font-family: "iCielGotham-Bold";
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                        text-transform: uppercase;
+                                        color: #1C1D20;
+                                        margin-bottom: 20px;
+                                        border-top: 1px solid #828282;
+                                        padding-top: 40px;
+                                    }
+                                    .woocommerce-checkout-review-order-table{
+                                        display: none;
+                                        width: 100%;
+                                        border: none;
+                                        tbody{
+                                            width: 100%;
+                                            display: block;
+                                            tr{
+                                                display: flex;
+                                                flex-direction: column;
+                                                th{
+                                                    display: none;
+                                                }
+                                                td{
+                                                    padding: 0;
+                                                    ul{
+                                                        li{
+                                                            input{
+                                                                display: none;
+                                                                &:checked + label::before{
+                                                                    background-color: #D71920;
+                                                                }
+                                                            }
+                                                            label{
+                                                                display: flex !important;
+                                                                flex-direction: row;
+                                                                justify-content: space-between;
+                                                                padding-left: 26px;
+                                                                position: relative;
+                                                                font-family: "iCielGotham-Medium";
+                                                                font-size: 15px;
+                                                                line-height: 26px;
+                                                                text-transform: uppercase;
+                                                                color: #1C1D20;
+                                                                @media(max-width: 480px){
+                                                                    font-size: 14px;
+                                                                }
+                                                                span{
+                                                                    font-size: 14px;
+                                                                    line-height: 26px;
+                                                                    text-transform: uppercase;
+                                                                    color: #1C1D20;
+                                                                    @media(max-width: 480px){
+                                                                        font-size: 13px;
+                                                                    }
+                                                                }
+                                                                &::before{
+                                                                    content: "";
+                                                                    width: 12px;
+                                                                    height: 12px;
+                                                                    border: 3px solid #E0E0E0;
+                                                                    background-color: #E0E0E0;
+                                                                    left: 0;
+                                                                    top: 7px;
+                                                                    position: absolute;
+                                                                    border-radius: 50%;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.is--active{
+                                            display: block;
+                                        }
+                                    }
+                                }
+
+                                .btn_checkout_control{
+                                    display: none;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    &.is--active{
+                                        display: flex;
+                                    }
+                                    .back_cart{
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                        border: none;
+                                        background: #E0E0E0;
+                                        text-transform: uppercase;
+                                        color: #1C1D20;
+                                        width: 230px;
+                                        height: 46px;
+                                        outline: none;
+                                        @media(max-width: 480px){
+                                            width: calc(100% - 135px);
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    .continue_checkout{
+                                        width: 200px;
+                                        height: 46px;
+                                        font-family: "iCielGotham-Medium";
+                                        background: #D71920;
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                        text-transform: uppercase;
+                                        color: #FFFFFF;
+                                        border: none;
+                                        outline: none;
+                                        @media(max-width: 480px){
+                                            width: 135px;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        };
+                    }
+                    .__right{
+                        width: percentage(520/1200);
+                        @media(max-width: 1024px){
+                            width: percentage(530/1200);
+                        }
+                        @media(max-width: 768px){
+                            width: 100%;
+                            order: 1;
+                            margin-bottom: 50px;
+                        }
+                        @media(max-width:480px){
+                            margin-bottom: 30px;
+                        }
+                        .summary_order{
+                            padding: 48px 60px 60px;
+                            background: #F7F7F7;
+                            @media(max-width: 1024px){
+                                padding: 48px 30px 60px;
+                            }
+                            @media(max-width: 480px){
+                                padding: 30px 10px 40px;
+                            }
+                            .title_summary_order{
+                                font-family: "iCielGotham-Bold";
+                                font-size: 18px;
+                                line-height: 26px;
+                                text-transform: uppercase;
+                                color: #1C1D20;
+                                margin-bottom: 30px;
+                            }
+                            .list_order{
+                                padding-bottom: 40px;
+                                border-bottom: 1px solid #828282;
+                                ._item_product{
+                                    display: flex;
+                                    flex-direction: row;
+                                    margin-bottom: 42px;
+                                    @media(max-width: 480px){
+                                        margin-bottom: 25px;
+                                    }
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+                                    .--img{
+                                        width: 60px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        img{
+                                            max-width: 100%;
+                                            max-height: 100%;
+                                        }
+                                    }
+                                    .--ifo{
+                                        width: calc(100% - 60px);
+                                        padding-left: 42px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        @media(max-width: 1024px){
+                                            padding-left: 30px;
+                                        }
+                                        @media(max-width: 480px){
+                                            padding-left: 15px;
+                                        }
+                                        p{
+                                            text-transform: uppercase;
+                                            span{
+                                                font-family: "iCielGotham-Bold";
+                                            }
+                                            &:nth-of-type(1){
+                                                font-size: 16px;
+                                                line-height: 19px;
+                                                color: #212121;
+                                                margin-bottom: 8px;
+                                                @media(max-width: 480px){
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                }
+                                            }
+                                            &:nth-of-type(2){
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                color: #1C1D20;
+                                                @media(max-width: 480px){
+                                                    font-size: 13px;
+                                                    line-height: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            form{
+                                padding: 30px 0 36px;
+                                border-bottom: 1px solid #828282;
+                                p{
+                                    font-family: "iCielGotham-Medium";
+                                    font-size: 14px;
+                                    line-height: 26px;
+                                    text-transform: uppercase;
+                                    color: #1C1D20;
+                                    margin-bottom: 1px;
+                                }
+                                .frm_group{
+                                    display: flex;
+                                    flex-direction: row;
+                                    input{
+                                        background: #FFFFFF;
+                                        border: 1px solid #BDBDBD;
+                                        box-sizing: border-box;
+                                        width: calc(100% - 127px);
+                                        height: 46px;
+                                        padding: 0 20px;
+                                        outline: none;
+                                    }
+                                    button{
+                                        width: 127px;
+                                        height: 46px;
+                                        background-color: #D71920;
+                                        border: none;
+                                        font-family: "iCielGotham-Medium";
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                                .error_mess{
+                                    font-size: 15px;
+                                    line-height: 17px;
+                                    text-transform: none;
+                                    font-family: "iCielGotham-Book";
+                                    color: #1C1D20;
+                                    margin-top: 5px;
+                                }
+                            }
+                            .total_products{
+                                padding: 36px 0;
+                                border-bottom: 1px solid #BDBDBD;
+                                p{
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    text-transform: uppercase;
+                                    color: #1C1D20;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    margin-bottom: 24px;
+                                    span{
+                                        &:nth-of-type(2){
+                                            font-family: "iCielGotham-Bold";
+                                            font-size: 16px;
+                                            line-height: 19px;
+                                            color: #D71920;
+                                        }
+                                    }
+                                    &:nth-of-type(2){
+                                        span{
+                                            &:nth-of-type(2){
+                                                color: #1C1D20;
+                                            }
+                                        }
+                                    }
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+
+                            .total_order{
+                                padding-top: 36px;
+                                p{
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    text-transform: uppercase;
+                                    color: #1C1D20;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    span{
+                                        &:nth-of-type(2){
+                                            font-family: "iCielGotham-Bold";
+                                            font-size: 16px;
+                                            line-height: 19px;
+                                            color: #D71920;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .need_help{
+                            margin-top: 40px;
+                            p{
+                                font-family: "iCielGotham-Bold";
+                                font-size: 18px;
+                                line-height: 26px;
+                                text-transform: uppercase;
+                                color: #000000;
+                                margin-bottom: 16px;
+                            }
+                            a{
+                                font-size: 14px;
+                                line-height: 17px;
+                                text-decoration: underline;
+                                color: #4F4F4F;
+                                margin-bottom: 14px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

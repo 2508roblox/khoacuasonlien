@@ -1,0 +1,292 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-05-14 15:50+0700\n"
+"PO-Revision-Date: 2020-05-15 09:50+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: mitsubishi/inc/About.php:10 mitsubishi/inc/About.php:11
+msgid "Giới thiệu"
+msgstr ""
+
+#: mitsubishi/inc/General-information.php:10
+#: mitsubishi/inc/General-information.php:11
+msgid "Thông tin chung"
+msgstr ""
+
+#: mitsubishi/inc/Panigation.php:18
+msgid "<<"
+msgstr ""
+
+#: mitsubishi/inc/Panigation.php:19
+msgid ">>"
+msgstr ""
+
+#: mitsubishi/inc/Projects.php:10 mitsubishi/inc/Projects.php:11
+msgid "Danh sách dự án"
+msgstr ""
+
+#: mitsubishi/inc/Questions.php:10 mitsubishi/inc/Questions.php:11
+msgid "Questions Asked"
+msgstr ""
+
+#: mitsubishi/inc/Quote-price.php:10 mitsubishi/inc/Quote-price.php:11
+msgid "Thông tin báo giá"
+msgstr ""
+
+#: mitsubishi/inc/Sale-point.php:10 mitsubishi/inc/Sale-point.php:11
+msgid "Điểm bán hàng"
+msgstr ""
+
+#: mitsubishi/inc/User.php:32 mitsubishi/inc/User.php:73
+msgid "Phiên làm việc đã hết, vui lòng tải lại trang và thử lại."
+msgstr ""
+
+#: mitsubishi/inc/User.php:43
+msgid "Email này đã được đăng ký."
+msgstr ""
+
+#: mitsubishi/inc/User.php:61
+msgid "Đăng kí thành công."
+msgstr ""
+
+#: mitsubishi/inc/User.php:63
+msgid "Lỗi, không thể tạo đăng kí mới."
+msgstr ""
+
+#: mitsubishi/inc/User.php:83
+msgid "Tài khoản hoặc mật khẩu không chính xác."
+msgstr ""
+
+#: mitsubishi/inc/User.php:85
+msgid "Đăng nhập thành công, Chuyển hướng..."
+msgstr ""
+
+#: mitsubishi/inc/Woocommerce.php:165
+msgid "Thông tin đăng nhập"
+msgstr ""
+
+#: mitsubishi/inc/Woocommerce.php:166
+msgid "Sổ địa chỉ"
+msgstr ""
+
+#: mitsubishi/inc/Woocommerce.php:167
+msgid "Thông tin thanh toán"
+msgstr ""
+
+#: mitsubishi/inc/Woocommerce.php:168
+#: mitsubishi/template-parts/header/menu-main.php:56
+msgid "Lịch sử đơn hàng"
+msgstr "Order history"
+
+#: mitsubishi/inc/Woocommerce.php:169
+msgid "Logout"
+msgstr ""
+
+#: mitsubishi/inc/contact-form/ContactForm.php:42
+#: mitsubishi/inc/contact-form/ContactForm.php:43
+#: mitsubishi/inc/contact-form/ContactForm.php:47
+msgid "Register consultant"
+msgstr ""
+
+#: mitsubishi/inc/contact-form/ContactForm.php:76
+#: mitsubishi/inc/contact-form/ContactProductDetail.php:75
+msgid "Không thể xác nhận mã khoá bảo mật"
+msgstr ""
+
+#: mitsubishi/inc/contact-form/ContactForm.php:93
+#: mitsubishi/inc/contact-form/ContactProductDetail.php:92
+msgid "Vui lòng điền đầy đủ thông tin!"
+msgstr ""
+
+#: mitsubishi/inc/contact-form/ContactForm.php:99
+#: mitsubishi/inc/contact-form/ContactProductDetail.php:98
+msgid "Số điện thoại không hợp lệ!"
+msgstr ""
+
+#: mitsubishi/inc/contact-form/ContactForm.php:118
+#: mitsubishi/inc/contact-form/ContactProductDetail.php:117
+msgid "Gửi thành công"
+msgstr ""
+
+#: mitsubishi/inc/contact-form/ContactForm.php:120
+#: mitsubishi/inc/contact-form/ContactProductDetail.php:119
+msgid "Lỗi, không thể tạo đăng kí mới"
+msgstr ""
+
+#: mitsubishi/inc/contact-form/ContactProductDetail.php:41
+#: mitsubishi/inc/contact-form/ContactProductDetail.php:42
+#: mitsubishi/inc/contact-form/ContactProductDetail.php:46
+msgid "Customer inquiries"
+msgstr ""
+
+#: mitsubishi/template-parts/account/dashboard.php:6
+msgid "Thông tin đăng nhập của bạn"
+msgstr ""
+
+#: mitsubishi/template-parts/account/dashboard.php:10
+msgid "Họ và tên"
+msgstr "Full Name"
+
+#: mitsubishi/template-parts/account/dashboard.php:14
+#: mitsubishi/woocommerce/single-product-reviews.php:95
+msgid "Email"
+msgstr ""
+
+#: mitsubishi/template-parts/account/dashboard.php:20
+msgid "Số điện thoại"
+msgstr "Telephone"
+
+#: mitsubishi/template-parts/account/dashboard.php:24
+msgid "Ngày sinh"
+msgstr "Birthday"
+
+#: mitsubishi/template-parts/account/dashboard.php:29
+msgid "Chỉnh sửa thông tin"
+msgstr "Edit information"
+
+#: mitsubishi/template-parts/account/dashboard.php:30
+msgid "Đổi mật khẩu"
+msgstr "Edit password"
+
+#: mitsubishi/template-parts/header/menu-main.php:55
+msgid "Thông tin"
+msgstr "Account"
+
+#: mitsubishi/template-parts/header/menu-main.php:57
+msgid "Đăng xuất"
+msgstr "Logout"
+
+#: mitsubishi/template-parts/home/section2.php:9
+msgid "Thiết bị lọc nước"
+msgstr ""
+
+#: mitsubishi/template-parts/home/section4.php:14
+#: mitsubishi/template-parts/home/section4.php:25
+msgid "giới thiệu"
+msgstr "introduction"
+
+#: mitsubishi/template-parts/home/section4.php:21
+msgid "Xem tất cả"
+msgstr "View all"
+
+#: mitsubishi/template-parts/home/section5.php:6
+msgid "dự án sử dụng"
+msgstr ""
+
+#: mitsubishi/template-parts/home/section5.php:17
+#: mitsubishi/template-parts/home/section5.php:26
+#: mitsubishi/template-parts/home/section5.php:35
+#: mitsubishi/template-parts/home/section6.php:65
+msgid "Xem chi tiết"
+msgstr "View more"
+
+#: mitsubishi/woocommerce/auth/form-login.php:34
+#, php-format
+msgid ""
+"To connect to %1$s you need to be logged in. Log in to your store below, or "
+"<a href=\"%2$s\">cancel and return to %1$s</a>"
+msgstr ""
+
+#: mitsubishi/woocommerce/cart/cart-shipping.php:54
+msgid "Shipping options will be updated during checkout."
+msgstr ""
+
+#: mitsubishi/woocommerce/cart/cart-shipping.php:62
+msgid "Shipping costs are calculated during checkout."
+msgstr ""
+
+#: mitsubishi/woocommerce/cart/cart-shipping.php:64
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: mitsubishi/woocommerce/cart/cart-shipping.php:67
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: mitsubishi/woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate shipping"
+msgstr ""
+
+#: mitsubishi/woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: mitsubishi/woocommerce/emails/customer-invoice.php:38
+#: mitsubishi/woocommerce/emails/plain/customer-invoice.php:31
+#, php-format
+msgid ""
+"An order has been created for you on %1$s. Your invoice is below, with a "
+"link to make payment when you’re ready: %2$s"
+msgstr ""
+
+#: mitsubishi/woocommerce/emails/email-order-details.php:34
+#, php-format
+msgid "[Order #%s]"
+msgstr ""
+
+#: mitsubishi/woocommerce/loop/result-count.php:27
+msgid "Showing the single result"
+msgstr ""
+
+#: mitsubishi/woocommerce/myaccount/dashboard.php:29
+#, php-format
+msgid "Hello %1$s (not %1$s? <a href=\"%2$s\">Log out</a>)"
+msgstr ""
+
+#: mitsubishi/woocommerce/myaccount/dashboard.php:39
+#, php-format
+msgid ""
+"From your account dashboard you can view your <a href=\"%1$s\">recent "
+"orders</a>, manage your <a href=\"%2$s\">shipping and billing addresses</a>, "
+"and <a href=\"%3$s\">edit your password and account details</a>."
+msgstr ""
+
+#: mitsubishi/woocommerce/myaccount/my-address.php:26
+#: mitsubishi/woocommerce/myaccount/my-address.php:35
+msgid "Billing address"
+msgstr ""
+
+#: mitsubishi/woocommerce/myaccount/my-address.php:27
+msgid "Shipping address"
+msgstr ""
+
+#: mitsubishi/woocommerce/order/tracking.php:30
+#, php-format
+msgid "Order #%1$s was placed on %2$s and is currently %3$s."
+msgstr ""
+
+#: mitsubishi/woocommerce/single-product-reviews.php:89
+msgid "Name"
+msgstr ""
+
+#: mitsubishi/woocommerce/single-product/add-to-cart/variable.php:32
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: mitsubishi/woocommerce/single-product/related.php:27
+msgid "Related products"
+msgstr ""
+
+#: mitsubishi/woocommerce/single-product/tabs/additional-information.php:22
+msgid "Additional information"
+msgstr ""
+
+#: mitsubishi/woocommerce/single-product/tabs/description.php:22
+msgid "Description"
+msgstr ""
+
+#~ msgid "Tiếng việt"
+#~ msgstr "Eng"

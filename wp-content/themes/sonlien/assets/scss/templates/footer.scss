@@ -1,0 +1,220 @@
+._ft_top{
+	position: relative;
+	color: #FFF;
+	background: #1C1D20 url('./assets/images/homes/f.png') no-repeat;
+	background-position: bottom left;
+	background-size: auto 100%;
+	._ft_content{
+		width: 100%;
+		display: -webkit-box;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 45px percentage(120/1440) 40px;
+		@media(max-width: 1024px){
+			padding: 45px 30px 40px;
+		}
+		@media(max-width: 768px){
+			padding: 50px 30px 30px;
+			text-align: center;
+		}
+		@media(max-width: 768px){
+			padding: 33px 23px 21px;
+			text-align: center;
+		}
+		._label{
+			width: 100%;
+			font-family: "iCielGotham-Medium";
+			font-size: 0.84375rem;
+			line-height: 2rem;
+			letter-spacing: 0.02em;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			@media(max-width: 768px){
+				display: none;
+			}
+		}
+		._item{
+			font-size: 0.84375rem;
+			line-height: 1.4375rem;
+			letter-spacing: 0.02em;
+			@media(max-width: 768px){
+				font-size: .84375rem;
+			}
+			._link{
+				li{
+					margin-bottom: 7px;
+					@media(max-width: 768px){
+						margin-bottom: 12px;
+					}
+					a{
+						line-height: 2.0625rem;
+						font-family: "iCielGotham-Book";
+						color: #FFFFFF;
+						-webkit-transition: all .3s ease;
+						transition: all .3s ease;
+						&:hover{
+							color: #D71920;
+						}
+					}
+				}
+			}
+			.--social{
+				@media(max-width: 480px){
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+				}
+				@media(max-width: 320px){
+					flex-direction: column;
+				}
+				.--label{
+					display: none;
+					@media(max-width: 768px){
+						display: block;
+					}
+					@media(max-width: 480px){
+						margin-right: 26px;
+						white-space: nowrap;
+					}
+					@media(max-width: 320px){
+						margin-right: 0;
+					}
+				}
+				._link_social{
+					display: -webkit-box;
+					display: flex;
+					margin-top: 14px;
+					li{
+						margin-right: 26px;
+						&:last-child{
+							margin-right: 0;
+						}
+						a{
+							font-size: 1.25rem;
+							color: #D71920;
+							-webkit-transition: all .3s ease;
+							transition: all .3s ease;
+							&:hover{
+								color: #fff;
+							}
+						}
+					}
+					@media(max-width: 1024px){
+						li{
+							margin-right: 30px;
+						}
+					}
+					@media(max-width: 768px){
+						justify-content: center;
+						margin-top: 15px;
+					}
+					@media(max-width: 480px){
+						margin-top: 0;
+						justify-content: space-between;
+						li{
+							margin-right: 25px;
+						}
+					}
+					@media(max-width: 320px){
+						margin-left: 0px;
+						margin-top: 10px;
+						justify-content: center;
+						li{
+							margin-right: 40px;
+						}
+					}
+				}
+			}
+			
+			&:nth-of-type(1){
+				width: 30%;
+				@media(max-width: 768px){
+					width: 100%;
+				}
+				p{
+					margin-bottom: 7px;
+					@media(max-width: 768px){
+						margin-bottom: 18px;
+					}
+					a{
+						color: #D71920;
+						font-family: "iCielGotham-Medium";
+						@media(max-width: 768px){
+							font-size: 1.25rem;
+							font-family: "iCielGotham-Bold";
+						}
+					}
+				}
+			}
+			&:nth-of-type(2){
+				width: 45%;
+				._link{
+					column-count: 2;
+				}
+				@media(max-width: 768px){
+					display: none;
+				}
+			}
+			&:nth-of-type(3){
+				width: 25%;
+				@media(max-width: 768px){
+					width: 100%;
+					margin-top: 20px;
+				}
+				._link{
+					li{
+						text-transform: uppercase;
+						@media(max-width: 768px){
+							margin-bottom: 32px;
+						}
+						a{
+							@media(max-width: 768px){
+								font-family: "iCielGotham-Medium";
+								line-height: 1.75rem;
+								text-align: center;
+								color: #FFFFFF;
+							}
+							span{
+								img{
+									max-width: 160px;
+								}
+								&:nth-of-type(1){
+									display: none;
+									@media(max-width: 768px){
+										display: block;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+._ft_bottom{
+	margin-bottom: 50px;
+	@media(max-width: 480px){
+		margin-bottom: 60px;
+	}
+	._ft_content{
+		width: 100%;
+		padding: 17px percentage(120/1440);
+		text-align: center;
+		font-family: "iCielGotham-Book";
+		font-size: 0.75rem;
+		line-height: 1.4375rem;
+		letter-spacing: 0.1em;
+		color: #3A3A3A;
+		@media(max-width: 1024px){
+			padding: 12px 5px;
+		}
+		@media(max-width: 480px){
+			font-size: 0.5rem;
+			line-height: 1.375rem;
+		}
+		@media(max-width: 320px){
+			font-size: 0.44rem;
+		}
+	}
+}

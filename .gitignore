@@ -1,0 +1,26 @@
+# Tệp cấu hình nhạy cảm
+wp-config.php
+
+# Core WordPress
+wp-admin/
+wp-includes/
+
+# Thư mục người dùng tải lên
+wp-content/uploads/
+
+# Cache và log
+wp-content/cache/
+wp-content/wflogs/
+*.log
+
+# Tệp backup và tạm thời
+*.sql
+*.tar.gz
+*.zip
+*.tmp
+*.bak
+
+# Thư mục phát triển
+node_modules/
+vendor/
+*.env

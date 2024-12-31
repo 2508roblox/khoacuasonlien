@@ -1,0 +1,593 @@
+.products_site{
+    ._advantages{
+        height: 139px;
+        background: url('./assets/images/products/bg.png') no-repeat , #D71920;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        padding: 0 percentage(50/1440);
+        position: relative;
+        @media(max-width: 1024px){
+            padding: 0 50px;
+        }
+        @media(max-width: 480px){
+            height: 75px;
+            padding: 0 30px;
+        }
+        .swiper-container{
+            width: 100%;
+            .swiper-slide{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                min-height: 57px;
+                ._icon{
+                    margin-right: 23px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        filter: brightness(0) invert(1);
+                        max-width: 60px;
+                        max-height: 100%;
+                        @media(max-width: 480px){
+                            max-height: 40px;
+                        }
+                    }
+                }
+                ._txt{
+                    font-family: "iCielGotham-Medium";
+                    font-size: 1.125rem;
+                    line-height: 1.375rem;
+                    color: #FFFFFF; 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    @media(max-width: 1024px){
+                        br{
+                            display: none;
+                        }
+                    }
+                    @media(max-width: 480px){
+                        font-family: "iCielGotham-Book";
+                        font-size: .875rem;
+                        line-height: 1.125rem;
+                        br{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .--panigate{
+            width: auto;
+            height: auto;
+            background-image: none;
+            outline: none;
+            display: none;
+            opacity: 1;
+            &.swiper-button-next{
+                right: 10px;
+            }
+            &.swiper-button-prev{
+                left: 10px;
+            }
+            @media(max-width: 768px){
+                display: block;
+            }
+            @media(max-width: 480px){
+                margin-top: -10px;
+            }
+        }
+    }
+    .product_content{
+        .content_all{
+            .tw_title{
+                text-align: center;
+                background-color: #F7F7F7;
+                padding-top: 70px;
+                @media(max-width: 480px){
+                    padding: 34px 23px 0;
+                }
+            }
+            ._category{
+                background-color: #F7F7F7;
+                .tw_container{
+                    .__list{
+                        padding: 50px percentage(120/1440) 88px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        @media(max-width: 1024px){
+                            padding: 50px 30px;
+                        }
+                        @media(max-width: 480px){
+                            padding: 23px 23px 45px;
+                        }
+                        a{
+                            display: block;
+                            width: calc(100%/5);
+                            height: 66px;
+                            background-color: #ffffff;
+                            line-height: 66px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            color: #1C1D20;
+                            border-bottom: 1px solid #E0E0E0;
+                            white-space: nowrap;
+                            @media(max-width: 1024px){
+                                width: calc(100%/3);
+                            }
+                            @media(max-width:480px){
+                                height: 56px;
+                                padding: 0 15px;
+                                white-space: initial;
+                                font-size: .75rem;
+                                line-height: 1.1rem;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            &:last-child{
+                                @media(max-width: 1024px){
+                                    width: 100%;
+                                }
+                            }
+                            &.is_active{
+                                background-color:#D71920;
+                                color: #ffffff;
+                                font-family: "iCielGotham-Bold";
+                            }
+                            &:hover{
+                                background-color:#D71920;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            ._products{
+                .tw_container{
+                    .__content{
+                        padding: 76px percentage(120/1440) 88px;
+                        @media(max-width: 1024px){
+                            padding: 76px 30px 88px;
+                        }
+                        @media(max-width: 480px){
+                            padding: 40px 0px ;
+                        }
+                        .__control{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin-bottom: 23px;
+                            font-family: "iCielGotham-Medium";
+                            font-size: .9375rem;
+                            line-height: 1.625rem;
+                            color: #1C1D20;
+                            @media(max-width: 768px){
+                                flex-direction: column;
+                            }
+                            @media(max-width: 480px){
+                                padding: 0px 23px ;
+                            }
+                            .--notification{
+                                text-transform: uppercase;
+                                @media(max-width: 768px){
+                                    margin-bottom: 8px;
+                                }
+                            }
+                            form.--filter{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                @media(max-width: 320px){
+                                    justify-content: flex-end;
+                                }
+                                p{
+                                    color: #AEAEAE;
+                                    @media(max-width: 480px){
+                                        margin-right: 23px;
+                                        font-size: .875rem;
+                                    }
+                                    @media(max-width: 320px){
+                                        display: none;
+                                    }
+                                }
+                                .--group{
+                                    margin-left: 50px;
+                                    position: relative;
+                                    @media(max-width: 480px){
+                                        margin-left: 0;
+                                    }
+                                    &:nth-of-type(3){
+                                        label{
+                                            span{
+                                                &:nth-child(2){
+                                                    @media(max-width: 480px){
+                                                        @media(max-width: 480px){
+                                                            border-right: none;
+                                                            padding-right: 0;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    label{
+                                        color: #393939;
+                                        position: relative;
+                                        &::after{
+                                            border: 1px solid #BDBDBD;
+                                            box-sizing: border-box;
+                                            border-radius: 2px;
+                                            position: absolute;
+                                            content: "";
+                                            width: 15px;
+                                            height: 15px;
+                                            left: -23px;
+                                            top: 1px;
+                                            background: transparent;
+                                            @media(max-width: 480px){
+                                                content: none;
+                                            }
+                                        }
+                                        span{
+                                            &:nth-child(1){
+                                                @media(max-width: 480px){
+                                                    display: none;
+                                                }
+                                            }
+                                            &:nth-child(2){
+                                                display: none;
+                                                @media(max-width: 480px){
+                                                    display: block;
+                                                    @media(max-width: 480px){
+                                                        border-right: 0.5px solid #ACACAC;
+                                                        padding-right: 7px;
+                                                        line-height: 1rem;
+                                                        font-size: .875rem;
+                                                    }
+                                                    @media(max-width: 320px){
+                                                        padding: 0 5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    input[type="radio"]{
+                                        opacity: 0;
+                                        @media(max-width: 480px){
+                                            position: absolute;
+                                            z-index: -1;
+                                            top: 0;
+                                            left: 0;
+                                        }
+                                        &:checked{
+                                            & + label{
+                                                &::after{
+                                                    background: url('./assets/images/products/filter.png') no-repeat, #D71920;
+                                                    background-position: center;
+                                                    border: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .__list_product{
+                            display: flex;
+                            flex-wrap: wrap;
+                            .--item{
+                                width: calc((100% - 116px)/3);
+                                margin-bottom: 60px;
+                                margin-right: 58px;
+                                @media(max-width: 1024px){
+                                    width: calc((100% - 90px)/3);
+                                    margin-right: 45px;
+                                }
+                                @media(max-width: 768px){
+                                    width: calc((100% - 45px)/2);
+                                    margin-right: 45px;
+                                }
+                                @media(max-width: 480px){
+                                    width: 50%;
+                                    margin-right: 0 !important;
+                                    margin-bottom: 0;
+                                    border-bottom: 0.5px solid #E0E0E0;
+                                }
+                                &:nth-child(2n){
+                                    // margin-right: 0;
+                                    @media(max-width: 768px){
+                                        margin-right: 0 !important;
+                                    }
+                                }
+                                &:nth-child(3n){
+                                    margin-right: 0;
+                                    @media(max-width: 768px){
+                                        margin-right: 45px;
+                                    }
+                                }
+                                &:nth-of-type(2n+1){
+                                    @media(max-width: 480px){
+                                        border-right: 0.5px solid #E0E0E0;
+                                    }
+                                    @media(max-width: 320px){
+                                        border-right: 1px solid #E0E0E0;
+                                    }
+                                }
+                                &:nth-of-type(1), &:nth-of-type(2){
+                                    @media(max-width: 480px){
+                                        border-top: 0.5px solid #E0E0E0;
+                                    }
+                                }
+                                &:hover{
+                                    .--info-product{
+                                        // border: 1.5px solid #D71920;
+                                        border: .5px solid transparent;
+                                        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+                                        @media(max-width: 1024px){
+                                            border: none;
+                                            box-shadow: none;
+                                        }
+                                        .--decor{
+                                            .--line{
+                                                @media(max-width: 1024px){
+                                                    width: 0 !important;
+                                                    height: 0 !important;
+                                                }
+                                                &:nth-child(1){
+                                                    width: 100%;
+                                                }
+                                                &:nth-child(2){
+                                                    height: 100%;
+                                                }
+                                                &:nth-child(3){
+                                                    width: 100%;
+                                                }
+                                                &:nth-child(4){
+                                                    height: 100%;;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .--info-product{
+                                    background: #FFFFFF;
+                                    border: 0.5px solid #BDBDBD;
+                                    box-sizing: border-box;
+                                    padding: 22px 0px 19px;
+                                    text-align: center;
+                                    margin-bottom: 16px;
+                                    position: relative;
+                                    @media(max-width: 480px){
+                                        padding: 17px 18px 12px;
+                                        border: none;
+                                        margin-bottom: 0;
+                                    }
+                                    .--decor{
+                                        .--line{
+                                            position: absolute;
+                                            transition: .4s;
+                                            &:nth-child(1){
+                                                top: 0;
+                                                right: 0;
+                                                width: 0;
+                                                height: 2px;
+                                                background-color: #D71920;
+                                            }
+                                            &:nth-child(2){
+                                                top: 0;
+                                                right: 0;
+                                                width: 2px;
+                                                height: 0;
+                                                background-color: #D71920;
+                                            }
+                                            &:nth-child(3){
+                                                bottom: 0;
+                                                left: 0;
+                                                width: 0;
+                                                height: 2px;
+                                                background-color: #D71920;
+                                            }
+                                            &:nth-child(4){
+                                                bottom: 0;
+                                                left: 0;
+                                                width: 2px;
+                                                height: 0;
+                                                background-color: #D71920;
+                                            }
+                                        }
+                                    }
+                                    .--even{
+                                        position: absolute;
+                                        z-index: 1;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                    a{
+                                        .--name{
+                                            text-transform: uppercase;
+                                            color: #212121;
+                                            padding: 0 65px;
+                                            min-height: 52px;
+                                            @media(max-width: 1200px){
+                                                padding: 0 40px;
+                                            }
+                                            @media(max-width: 768px){
+                                                padding: 0 65px;
+                                            }
+                                            @media(max-width: 480px){
+                                                display: none;
+                                            }
+                                        }
+                                        .--image{
+                                            padding: 35px 90px;
+                                            width: 100%;
+                                            height: 245px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            @media(max-width: 1024px){
+                                                padding: 30px 60px;
+                                            }
+                                            @media(max-width: 480px){
+                                                height: 149px;
+                                                padding: 0;
+                                                margin-bottom: 21px;
+                                            }
+                                            img{
+                                                max-width: 100%;
+                                                max-height: 100%;
+                                            }
+                                        }
+                                        .--name_m{
+                                            display: none;
+                                            font-family: "iCielGotham-Medium";
+                                            font-size: .875rem;
+                                            line-height: 1.25rem;
+                                            text-align: center;
+                                            color: #212121;
+                                            text-transform: uppercase;
+                                            margin-bottom: 8px;
+                                            min-height: 60px;
+                                            @media(max-width: 480px){
+                                                display: block;
+                                            }
+                                            span{
+                                                &:nth-of-type(2){
+                                                    color: #D71920;
+                                                }
+                                            }
+                                        }
+                                        .--sku{
+                                            background: #F4F4F4;
+                                            height: 19px;
+                                            margin: 0 1px 25px;
+                                            @media(max-width: 480px){
+                                                display: none;
+                                            }
+                                            span{
+                                                display: inline-block;
+                                                font-family: "iCielGotham-Bold";
+                                                padding: 0 15px;
+                                                background-color: #ffffff;
+                                                font-size: 1.5rem;
+                                                line-height: 1.5rem;
+                                                text-transform: uppercase;
+                                                color: #1C1D20;
+                                            }
+                                        }
+                                        .--price{
+                                            padding: 0 30px;
+                                            text-transform: uppercase;
+                                            @media(max-width: 480px){
+                                                padding: 0;
+                                            }
+                                            p{
+                                                &:nth-child(1){
+                                                    font-family: "iCielGotham-Bold";
+                                                    font-size: 1.25rem;
+                                                    color: #D71920;
+                                                    margin-bottom: 2px;
+                                                }
+                                                &:nth-child(2){
+                                                    font-size: .9375rem;
+                                                    color: #828282;
+                                                    height: 26px;
+                                                    overflow: hidden;
+                                                    word-break: break-word;
+                                                    display: -webkit-box;
+                                                    -webkit-line-clamp: 1;
+                                                    -webkit-box-orient: vertical;
+                                                    @media(max-width: 480px){
+                                                        display: none;
+                                                    }
+                                                }
+                                                span{
+                                                    @media(max-width: 480px){
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .--button-control{
+                                    padding: 0 13px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    padding: 0 23px 21px;
+                                    @media(max-width: 1024px){
+                                        padding: 0 10px 21px;
+                                    }
+                                    @media(max-width: 480px){
+                                        flex-direction: column;
+                                    }
+                                    a{
+                                        display: inline-block;
+                                        width: calc((100% - 9px)/2);
+                                        height: 45.84px;
+                                        white-space: nowrap;
+                                        font-size: .9375rem;
+                                        text-align: center;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        color: #1C1D20;
+                                        background-color: #E0E0E0;
+                                        line-height: 45.84px;
+                                        @media(max-width: 480px){
+                                            width: 100%;
+                                            margin-bottom: 5px;
+                                        }
+                                        &:nth-child(1){
+                                            background-color: #D71920;
+                                            font-family: "iCielGotham-Medium";
+                                            color: #FFFFFF;
+                                        }
+                                        &:last-child{
+                                            @media(max-width: 480px){
+                                                margin-bottom: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .__pagination--main{
+                            @media(max-width: 480px){
+                                // display: none;
+                                margin-top: 30px;
+                            }
+                        }
+
+                        .__load--more{
+                            width: 200px;
+                            height: 40px;
+                            text-align: center;
+                            line-height: 40px;
+                            text-transform: uppercase;
+                            color: #ffffff;
+                            background: #D71920;
+                            cursor: pointer;
+                            font-family: "iCielGotham-Bold";
+                            margin: 28.45px auto 0;
+                            display: none;
+                            @media(max-width: 480px){
+                                // display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

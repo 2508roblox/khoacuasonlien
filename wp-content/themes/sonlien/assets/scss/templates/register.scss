@@ -1,0 +1,96 @@
+._register{
+    background: url('./assets/images/products/mit.png') no-repeat, #f0f0f0;
+    background-position: center right;
+    background-size: auto 100%;
+    .tw_container{
+        .content_all{
+            padding: 97px percentage(240/1440) 55px;
+            @media(max-width: 1024px){
+                padding: 97px percentage(120/1440) 55px;
+            }
+            @media(max-width: 768px){
+                padding: 97px 30px 55px;
+            }
+            @media(max-width: 480px){
+                padding: 37px 23px 34px;
+            }
+            .tw_title{
+                text-align: center;
+                margin-bottom: 48px;
+                @media(max-width: 480px){
+                    margin-bottom: 15px;
+                }
+            }
+            form{
+                text-align: center;
+                .--group-all{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    text-align: left;
+                    .--group{
+                        width: calc((100% - 44px)/2);
+                        margin-bottom: 23px;
+                        @media(max-width: 480px){
+                            width: 100%;
+                            margin-bottom: 9px;
+                        }
+                        label{
+                            display: block;
+                            font-family: "iCielGotham-Medium";
+                            font-size: .875rem;
+                            text-transform: uppercase;
+                            color: #1C1D20;
+                            @media(max-width: 480px){
+                                margin-bottom: 10px;
+                                font-size: .8125rem;
+                            }
+                            sup{
+                                color: #D01521;
+                                font-size: 1.2rem;
+                            }
+                        }
+                        input, select{
+                            width: 100%;
+                            display: block;
+                            height: 50px;
+                            background-color: #ffffff;
+                            border: none;
+                            outline: none;
+                            font-size: 18px;
+                            padding: 0 21px;
+                        }
+
+                        select{
+                            -webkit-appearance: none;
+                            background-image: url('./assets/images/products/select.png');
+                            background-position: center right 19px;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                button{
+                    background: #D71920;
+                    width: 152px;
+                    height: 48px;
+                    line-height: 48px;
+                    text-align: center;
+                    font-family: "iCielGotham-Bold";
+                    font-size: .9375rem;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    border: none;
+                    margin-top: 42px;
+                    @media(max-width: 480px){
+                        margin-top: 13px;
+                    }
+                }
+                .--mess_error{
+                    margin-top: 20px;
+                    font-family: "iCielGotham-Medium";
+                    font-size: .875rem;
+                }
+            }
+        }
+    }
+}
